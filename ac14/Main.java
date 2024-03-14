@@ -31,7 +31,7 @@ public class Main {
         for (Produto produto : listaCompra) {
             System.out.println("Produto: " + produto.getNome() + " - Preco: " + produto.getPreco());
         }
-        System.out.printf("Preco final: %.2f", precoFinal);
+        System.out.printf("Preco final: %.2f\n", precoFinal);
         System.out.printf("Preco das parcelas: %.2f", precoParcelas);
 
         sc.close();
