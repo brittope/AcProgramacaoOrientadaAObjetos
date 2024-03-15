@@ -20,8 +20,15 @@ public class Main {
                 aluno.setNotas(i, j, sc.nextDouble());
             }
         }
-        System.out.print("Notas: " +Arrays.deepToString(aluno.getNotas()));
+        double total = 0;
+        for (i = 0; i < aluno.getQntAlunos(); i++) {
+            for (int j = 0; j < aluno.getQntNotas(); j++) {
+                total += aluno.getNotas()[i][j];
+            }
+        }
+        double media = total / (aluno.getQntAlunos() * aluno.getQntNotas());
 
-        
+        System.out.println("Notas: " + Arrays.deepToString(aluno.getNotas()));
+        System.out.println("Media final da turma = " + media);
     }
 }
