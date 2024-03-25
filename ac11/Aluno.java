@@ -26,4 +26,5 @@ public class Aluno {
     public void setNotas(int index, double value) {
         notas[index] = value;
     }
+    
 }
